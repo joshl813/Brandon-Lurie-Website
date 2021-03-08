@@ -1,8 +1,5 @@
 
-//Add AOS
-AOS.init({
-    duration: 1200,
-  })
+
 
 //Get the button:
 mybutton = document.getElementById("myBtn");

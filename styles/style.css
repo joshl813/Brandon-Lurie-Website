@@ -126,7 +126,7 @@ position: relative;
 z-index: 1;
 position: absolute;
 top: 65%;
-left: 20%;
+left: 10%;
 color: white;
 }
 .parallax .my-name {
@@ -145,7 +145,7 @@ color: white;
 	min-height: 50vh;
 	padding: 10rem 5rem;
 	flex-direction: column;
-	margin-top: 30rem;
+	margin-top: 20rem;
 }
 .about .about-info {
 	text-align: center;
@@ -161,18 +161,7 @@ color: white;
 	line-height: 2rem;
 	margin-top: 10px;
 }
-.about .about-info .about-info-button {
-	padding: 1.6rem 2.6rem;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.548);
-	color: whitesmoke;
-	text-decoration: none;
-	font-size: 1.6rem;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
+
 .about .about-img {
 	margin-top: 50px;
 	display: block;
