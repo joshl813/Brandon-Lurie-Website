@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 * {
 	padding: 0;
@@ -7,7 +8,7 @@
 
 html {
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Barlow Condensed', sans-serif;
 	scroll-behavior: smooth;
 }
 .container {
@@ -24,6 +25,8 @@ html {
 	position: fixed;
 	z-index: 100;
 	background-color: white;
+	font-weight: 700;
+	font-style: italic;
 
 }
 .nav-bar {
@@ -128,6 +131,7 @@ position: absolute;
 top: 65%;
 left: 10%;
 color: white;
+font-style: italic;
 }
 .parallax .my-name {
 	font-size: 2rem;
@@ -137,57 +141,54 @@ color: white;
 }
 
 /* End Parallax Scroll */
-/* Hero Section */
+
+
+
 
 /* About Section  */
-.about {
-	width: 100%;
-	min-height: 50vh;
-	padding: 10rem 5rem;
+#about {
+	width: auto;
+	margin-top: 30rem;
+	margin-bottom: 20rem;
+	display: flex;
 	flex-direction: column;
-	margin-top: 20rem;
+	justify-content: flex-end;
 }
-.about .about-info {
-	text-align: center;
-}
-.about .about-info .about-info-heading {
+
+#about #about-heading {
 	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
-	color: black;
+	color: navy;
+	margin-left: 40%;
 }
-.about .about-info .about-info-desc {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	margin-top: 10px;
+#about #about-info {
+	text-align: center;
+	display: flexbox;
+	flex-direction: row;
 }
 
-.about .about-img {
-	margin-top: 50px;
-	display: block;
+
+#about #about-info #about-info-desc {
+	font-size: 1.7rem;
+	max-width: 30%;
 }
-.about .about-img .about-img-wrapper {
+
+
+
+#about #about-info #about-img {
+	margin-top: 50px;
+	margin-right: 10rem;
+	margin-left: 10rem;
+
 	margin-top: 50px;
 	height: auto;
-	max-width: 400px;
+	max-width: 30%;
+	max-height: 200px;
 	position: relative;
 	display: inline-block;
 }
-.about .about-img .about-img-wrapper img {
-	height: 100%;
-	width: 100%;
-}
-.about .about-img .about-img-wrapper::after {
-	position: absolute;
-	content: '';
-	right: -5rem;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 70%;
-	height: 120%;
-	background-color: rgba(34, 33, 33, 0.158);
-	z-index: -1;
-}
+
 /* End About Section  */
 
 /* Services section  */
@@ -204,7 +205,7 @@ color: white;
 	font-size: 4rem;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: black;
+	color: navy;
 }
 .services .services-header .services-header-desc {
 	font-size: 1.3rem;
