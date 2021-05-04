@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brandon Lurie</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
@@ -14,132 +17,114 @@
 
 
 
-  <!-- nav-bar  -->
-  <section   id="nav-bar" class="fluid-container">
+<!-- nav-bar  -->
+  <!-- <section   id="nav-bar" class="fluid-container">
     <header class="nav-bar">
-      <div class="brand" data-aos="fade-right" data-aos-duration="2000"><a href = "#parallax"><img src="images\Life's fun. Let's get to work..png" alt=""></a></div>
-      <div data-aos="fade-left" data-aos-duration="2000"class="nav-list">
-        <ul>
-          <li><a class="nav-link" href="./blog.html">Blog</a></li>
-          <li><a class="nav-link" href="#about">About Me</a></li>
-          <li><a class="nav-link" href="#services">Projects</a></li>
+        <div class="brand" data-aos="fade-right" data-aos-duration="2000"><a href = "#parallax"><img src="images\Life's fun. Let's get to work..png" alt=""></a></div>
+        <div data-aos="fade-left" data-aos-duration="2000"class="nav-list">
+          <ul>
+            <li><a class="nav-link" href="#about">About Me</a></li>
+            <li><a class="nav-link" href="./blog.html">Something Curious</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+    </section> -->
+    <!-- End nav-bar  -->
+
+<!-- BS Nav Bar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+
+      <!-- Navbar brand -->
+      <a class="navbar-brand" onclick="topFunction()"><img src="images\Life's fun. Let's get to work..png" alt=""></a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#about-heading">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Something Curious</a>
+          </li>
+
+
         </ul>
+
       </div>
-    </header>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+    <!-- Navbar -->
+  <!-- End BS Nav Bar -->
+
+  <!-- BL Title -->
+  <section id='BL-Title' class= ''>
+    <h1>Brandon Lurie</h1>
   </section>
-  <!-- End nav-bar  -->
-
-
+  <!-- End BL Title -->
 
   <!-- Paralax Scrolling -->
   <section  id = "parallax" class="parallax">
     <div id="parallax-img">
-    <!-- <div class = "heading">
-      <div data-aos="fade-right" data-aos-delay ="1500" data-aos-duration="2000" class = "my-name">Hi! My Name is</div>
-      <div data-aos="fade-right" data-aos-delay ="2000" data-aos-duration="2000"class = "BL">Brandon Lurie</div>
-    </div> -->
+      <div class = "heading">
+      <!-- <div data-aos="fade-right" data-aos-delay ="1500" data-aos-duration="2000" class = "my-name">Hi! My Name is</div> -->
+      <!-- <div data-aos="fade-right" data-aos-delay ="0" data-aos-duration="2000"class = "BL">Brandon Lurie</div> -->
+    </div> 
   </div>
   </section>
   <!-- End Paralax Scrolling -->
 
 
 
-
   <!-- About section  -->
   <section  id="about" class="about-container">
-    <h1 class = "row" id="about-heading"  data-aos="fade-up" data-aos-duration ="2000" data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear">About Me</h1>
-    <div class="row" id="about-info" data-aos="fade-up" data-aos-duration ="2000" data-aos-anchor-placement="center-bottom" data-aos-easing="linear">
-      <p class= "col" id="about-info-desc">I'm an American expat living in the Jewish homeland. After graduating from NYU in 2017, I made aliyah, realizing a life-long dream of mine. Soon after, I received my MBA from Tel Aviv University.
-        I'm blessed to have been born into an amazing family with 2 awesome parents and 4 siblings, some of whom have gifted me the most delicious nieces and nephews. 
+    <h1 class = "row-sm-12 " id="about-heading"  data-aos="fade-up" data-aos-duration ="1700" data-aos-anchor-placement="bottom-bottom" data-aos-easing="linear">About Me</h1>
+    <div class="row" id="about-info">
+      <p class= "col-sm-6" id="about-info-desc" data-aos="fade-right" data-aos-duration ="2000" data-aos-anchor-placement="top-center" data-aos-easing="linear">I'm an American expat living in the Jewish homeland. After graduating from NYU in 2017, I made aliyah, realizing a life-long dream of mine. Soon after, I received my MBA from Tel Aviv University.<br><br>I'm blessed to have been born into an amazing family with 2 awesome parents and 4 siblings, some of whom have gifted me the most delicious nieces and nephews. 
         Originally from Los Angeles, I currently live in the Tel Aviv area with close friends. 
-        During the day, I spend my time as an associate at Israel's premier venture fund, Aviv Growth Partners. 
+        <br><br>During the day, I spend my time as an associate at Israel's premier venture fund, Aviv Growth Partners. 
         During the night, I still spend my time as an associate at Israel's premier venture fund, Aviv Growth Partners, but also try to get in some hoops, enjoy Wacky Mac, and curb my Twitter addiction. 
-        I'm passionate about building great things that have a marked impact on community. An unrelenting questioner, I find myself always asking the question "Why?" and trying to peel back the layers of reason behind religion, politics, and business. 
-        But mostly I just like eating Wacky Mac. 
-        If you're visiting this site it means you're probably curious about me--and the feeling is mutual! Feel free to reach out at belurie_at_gmail.com and I'd love to meet you </p>
-        <div class = "col" id="about-img" data-aos="fade-left" data-aos-duration ="2000" data-aos-anchor-placement="center-bottom" data-aos-easing="linear">
-          <img src="images\AboutMePic.jpeg" alt="">
+        <br><br> I'm passionate about building great things that have a marked impact on community. An unrelenting questioner, I find myself always asking the question "Why?" and trying to peel back the layers of reason behind religion, politics, and business. 
+       <br><br> But mostly I just like eating Wacky Mac. 
+        If you're visiting this site it means you're probably curious about me--and the feeling is mutual! Feel free to reach out at belurie@gmail.com and I'd love to meet you </p>
+        <div class = "col-sm-6" id="about-img" data-aos="fade-left" data-aos-duration ="2000" data-aos-anchor-placement="top-center" data-aos-easing="linear">
+          <img id="img" src="images\AboutMePic.jpeg" alt="">
         </div>
     </div>
-   
   </section>
   <!-- End About section  -->
 
 
 
 
-  <!-- Service Section  -->
-  <section id="services" class="services container">
-    <div data-aos="fade-up" data-aos-duration ="2000" data-aos-anchor-placement="center-bottom" data-aos-easing="linear" class="services-header">
-      <h1 class="services-header-heading">Projects</h1>
-      <p class="services-header-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni temporibus, omnis illum ipsa reiciendis illo eos odio possimus voluptatibus architecto.</p>
-    </div>
-    <div class="services-info">
-      <div class="service">
-        <div class="service-card">
-          <div class="service-front">
-            <i class="fa fa-palette"></i>
-            <h1 class="service-front-heading">Background</h1>
-          </div>
-          <div class="service-back">
-            <h1 class="service-back-heading">Web Design</h1>
-            <p class="service-back-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad, quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos, quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit!</p>
-          </div>
-        </div>
+  <!-- Contact Section  -->
+  <section  id="contact">
+    <h1 class = "row-sm-12" id="contact-heading"  data-aos="fade-up" data-aos-duration ="1200" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">Let's Shmooze!!</h1>
+    <div class="contact-container">
+      <div class="contact-info row">
+        <div class="phone col-sm-6">+972 58-537-7554</div>
+        <div class="email col-sm-6">belurie@gmail.com</div>
       </div>
-      <div class="service">
-        <div class="service-card">
-          <div class="service-front">
-            <i class="fa fa-laptop-code"></i>
-            <h1 class="service-front-heading">Font End Dev</h1>
-          </div>
-          <div class="service-back">
-            <h1 class="service-back-heading">Front End Dev</h1>
-            <p class="service-back-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad, quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos, quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit!</p>
-          </div>
-        </div>
-      </div>
-      <div class="service">
-        <div class="service-card">
-          <div class="service-front">
-            <i class="fa fa-building"></i>
-            <h1 class="service-front-heading">Other Projects</h1>
-          </div>
-          <div class="service-back">
-            <h1 class="service-back-heading">Other Projects</h1>
-            <p class="service-back-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad, quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos, quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit!</p>
-          </div>
-        </div>
-      </div>
+      <!-- <a href="#" type="button" class="Resume">Download Resume</a> -->
     </div>
   </section>
-  <!-- End Service Section  -->
+  <!-- End Contact Section  -->
 
-  <!-- Hire Section  -->
-  <section id="hire" class="hire container">
-    <h1 class="hire-heading">Hire me to build your dream website</h1>
-    <a href="#" type="button" class="hire-button">Hire Me !!</a>
-  </section>
-  <!-- End Hire Section  -->
 
-  <!-- Footer section  -->
-  <footer id="footer" class="footer container">
-    <div class="footer-contact">
-      <h1 class="footer-contact-heading">Contact Me</h1>
-      <p class="footer-contact-info">Email: JoshL813@gamil.com</p>
-      <p class="footer-contact-info">Mobile: (+972) 58 686 5072</p>
-    </div>
-    <div class="footer-social-follow">
-      <h1 class="footer-social-follow-heading">Follow Me</h1>
-      <div class="footer-social-icon">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram-square"></i></a>
-        <a href="#"><i class="fab fa-behance-square"></i></a>
-        <a href="#"><i class="fab fa-dribbble-square"></i></a>
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer section  -->
 
 
   <!-- Back To Top BUtton -->

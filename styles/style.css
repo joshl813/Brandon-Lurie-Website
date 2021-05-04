@@ -19,7 +19,7 @@ html {
 	justify-content: center;
 }
 /* Nav Bar  */
-#nav-bar {
+/* #nav-bar {
 	height: auto;
 	width: 100%;
 	position: fixed;
@@ -46,7 +46,7 @@ position: relative;
 .nav-bar .nav-list {
 	display: flex;
 	position: relative;
-	/* left: 64%; */
+	left: 64%; 
 	align-items: center;
 	justify-items: center;
 }
@@ -96,12 +96,75 @@ position: relative;
 }
 .nav-bar .nav-list.open ul {
 	transform: translateY(90px);
-}
-
-	
+} */
 
 /* End Nav Bar */
 
+
+/* BS Nav Bar */
+.navbar{
+	width: 100%;
+	font-size: 2.5rem;
+	display: flex;
+	background-color : white;
+	position: fixed;
+	justify-content: space-between;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+.navbar .container-fluid{
+	width: 100%;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 6rem;
+	margin-right: 6rem;
+	color : white;
+}
+
+.navbar-brand img{
+	height: 9rem;
+	width:auto;
+}
+
+.navbar-brand img:hover{
+	cursor: pointer;
+}
+
+.navbar .collapse{
+	justify-content:right;
+	flex-grow:0;
+
+
+}
+
+.navbar .navbar-toggler{
+
+	background-color: grey;
+}
+
+a{
+	color: rgba(0, 0, 0, 0.558);
+}
+.navbar-nav .nav-item{
+	margin-right: 2rem;
+	color: navy;
+	text-decoration: none;
+}
+/* End BS NavBar */
+
+/* BL Title */
+#BL-Title{
+	display: flex;
+	justify-content: center;
+	margin-top: 12rem;
+	padding: 0;
+}
+#BL-Title h1{
+	font-size: 5.5rem;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 1000;
+}
+/* End BL Title */
 
 /* Parallax Scroll */
 #parallax{
@@ -112,11 +175,12 @@ position: relative;
 
 #parallax #parallax-img {
 	background-image: url("../images/Brandon-Scenic.PNG");
-	/* background-color: navy */
-	
-	min-height: 600px; 
-	min-width: 600px;
-	margin: 0px 10rem 4rem 10rem;
+	min-height: 500px; 
+	min-width: 400px;
+	max-width: auto;
+	max-height: 600px;
+	margin: 0rem 13rem 0rem 13rem;
+
   
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -148,211 +212,83 @@ font-style: italic;
 /* About Section  */
 #about {
 	width: auto;
-	margin-top: 30rem;
-	margin-bottom: 20rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+	padding-top: 40rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	display: grid;
+	
 }
 
 #about #about-heading {
-	font-size: 4rem;
+	font-size: 3.5rem;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
 	color: navy;
-	margin-left: 40%;
+	display: flex;
+	justify-content: center;
+	font-family: 'Barlow Condensed', sans-serif;
+	padding-top: 14rem;
 }
 #about #about-info {
 	text-align: center;
-	display: flexbox;
-	flex-direction: row;
+	text-justify:inter-word;
 }
 
 
 #about #about-info #about-info-desc {
 	font-size: 1.7rem;
-	max-width: 30%;
+	margin-top: 50px;
 }
 
 
 
 #about #about-info #about-img {
+    max-height: 200px;
 	margin-top: 50px;
-	margin-right: 10rem;
-	margin-left: 10rem;
 
-	margin-top: 50px;
-	height: auto;
-	max-width: 30%;
-	max-height: 200px;
-	position: relative;
-	display: inline-block;
+}
+#about #about-info #about-img img{
+	object-fit: cover;
+    max-height: 460px;
+
 }
 
 /* End About Section  */
 
-/* Services section  */
-.services {
-	flex-direction: column;
-	min-height: 60vh;
-	padding: 10rem 5rem;
+
+/* Contact Section  */
+#contact{
+	justify-content: center;
+	margin-top: 40rem;
 }
-.services .services-header {
-	width: 100%;
-	text-align: center;
-}
-.services .services-header .services-header-heading {
-	font-size: 4rem;
+
+#contact #contact-heading {
+	margin-left: 3rem;
+	font-size: 3.5rem;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: .3rem;
 	color: navy;
-}
-.services .services-header .services-header-desc {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	margin-top: 20px;
-}
-.services .services-info {
-	margin-top: 30px;
-	display: flex;
-	align-items: center;
 	justify-content: center;
-	width: 100%;
-	flex-direction: column;
+	align-content: center;
+	font-family: 'Barlow Condensed', sans-serif;
 }
-.services .services-info .service {
-	width: 100%;
-	min-height: 300px;
-	position: relative;
-	transition: .3s ease transform;
-	margin: 5px;
-}
-.services .services-info .service .service-card {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	transform-style: preserve-3d;
-	transition: .7s ease transform;
-	display: block;
-}
-.services .services-info .service .service-card .service-front,
-.services .services-info .service .service-card .service-back {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	backface-visibility: hidden;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+#contact .contact-container {
+	display: grid;
 	justify-content: center;
-	background-color: rgba(0, 0, 0, 0.13);
-	padding: 10px;
-}
-.services .services-info .service .service-card .service-back {
-	transform: rotateY(180deg);
-}
-.services .services-info .service .service-card .service-front i {
-	font-size: 4rem;
-	color: black;
-	margin-bottom: 10px;
-}
-.services .services-info .service .service-card .service-front .service-front-heading,
-.services .services-info .service .service-card .service-back .service-back-heading {
+	background-color: navy;
+	color: white;
 	font-size: 2.5rem;
-	text-transform: capitalize;
+	padding:3rem;
+	font-family: 'Barlow Condensed', sans-serif;
 }
-.services .services-info .service:hover .service-card {
-	transform: rotateY(180deg);
-}
-.services .services-info .service .service-card .service-back .service-back-desc {
-	font-size: 1.3rem;
-	margin-top: 10px;
-	text-align: center;
-}
-.services .services-info .service:nth-child(2) .service-card .service-front {
-	background-image: url(./images/img-2.jpg);
-	background-size: cover;
-	position: relative;
-	color: white;
-}
-.services .services-info .service:nth-child(2) .service-card .service-front::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.274);
-	z-index: -1;
-}
-.services .services-info .service:nth-child(2) .service-card .service-front i {
-	color: white;
-}
-/* End Services section  */
 
-/* Hire Section  */
-.hire {
-	min-height: 10vh;
-	flex-direction: column;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.212);
-	padding: 3rem 2rem;
-}
-.hire .hire-heading {
-	color: black;
-	font-size: 2.2rem;
-	text-align: center;
-}
-.hire .hire-button {
-	padding: 2rem 3rem;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.267);
-	font-size: 1.6rem;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: .2rem;
-	margin-top: 10px;
-	color: whitesmoke;
-	transition: .3s ease background-color;
-}
-.hire .hire-button:hover {
-	background-color: black;
-}
-/* End Hire Section  */
+#contact #contact-info {
+	
 
-/* Footer section  */
-.footer {
-	min-height: 20vh;
-	width: 100%;
-	background-color: black;
-	color: white;
-	flex-direction: column;
-	text-align: center;
-	padding: 5rem;
 }
-.footer .footer-contact {
-	padding: 20px;
-}
-.footer .footer-contact .footer-contact-heading {
-	font-size: 2.5rem;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-bottom: 10px;
-}
-.footer .footer-contact .footer-contact-info {
-	font-size: 1.4rem;
-	padding-top: 10px;
-	letter-spacing: .2rem;
-}
-.footer .footer-social-follow .footer-social-icon a {
-	color: white;
-	font-size: 3rem;
-	margin: .4rem;
-	display: inline-block;
-}
-/* End Footer section  */
+/* End COntact Section  */
+
 
 /* Back to Top Button */
 #myBtn {
